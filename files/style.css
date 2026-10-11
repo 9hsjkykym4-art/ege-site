@@ -1,0 +1,48 @@
+:root{--bg:#f6f4ef;--fg:#1d1d1f;--card:#fff;--ac:#2f5bd8;--mut:#6b6b70;--ok:#1f8a4c;--bd:#dcd8cf;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#17181b;--fg:#ececec;--card:#222429;--ac:#7c9bff;--mut:#9a9aa2;--ok:#5fcf8b;--bd:#34363d}}
+:root[data-theme="dark"]{--bg:#17181b;--fg:#ececec;--card:#222429;--ac:#7c9bff;--mut:#9a9aa2;--ok:#5fcf8b;--bd:#34363d}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;line-height:1.4}
+main{max-width:640px;margin:0 auto;padding:16px}
+h1{font-size:20px;margin:4px 0 12px}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:14px}
+.chips button{border:1px solid var(--bd);background:var(--card);color:var(--fg);border-radius:999px;padding:6px 11px;font-size:13px;cursor:pointer}
+.chips button.on{background:var(--ac);border-color:var(--ac);color:#fff}
+.info{display:flex;justify-content:space-between;color:var(--mut);font-size:14px;margin-bottom:8px}
+.bar{height:6px;background:var(--bd);border-radius:3px;margin-bottom:14px;overflow:hidden}
+.bar i{display:block;height:100%;background:var(--ok);width:0;transition:width .3s}
+.card{background:var(--card);border:1px solid var(--bd);border-radius:16px;min-height:220px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:24px;cursor:pointer;user-select:none}
+.card .t{font-size:30px;font-weight:600;word-break:break-word}
+.card .r{margin-top:12px;color:var(--mut);font-size:15px}
+.card .h{margin-top:16px;color:var(--mut);font-size:12px}
+.card.back .t{color:var(--ac)}
+.acts{display:flex;gap:10px;margin-top:14px}
+.acts button{flex:1;padding:13px;font-size:16px;border-radius:12px;border:1px solid var(--bd);background:var(--card);color:var(--fg);cursor:pointer}
+.acts .k{background:var(--ok);border-color:var(--ok);color:#fff}
+.sh{margin-top:12px;background:none;border:0;color:var(--ac);font-size:14px;cursor:pointer;padding:6px 0}
+.tabs{display:flex;gap:8px;margin-bottom:14px}
+.tabs button{flex:1;padding:10px;border-radius:10px;border:1px solid var(--bd);background:var(--card);color:var(--fg);font-size:15px;cursor:pointer}
+.tabs button.on{background:var(--ac);border-color:var(--ac);color:#fff}
+.box{background:var(--card);border:1px solid var(--bd);border-radius:14px;padding:14px;margin-bottom:12px;font-size:14px}
+.box input{width:100%;padding:10px;border-radius:8px;border:1px solid var(--bd);background:var(--bg);color:var(--fg);font-size:15px;margin:8px 0}
+.box button{padding:10px 14px;border-radius:8px;border:0;background:var(--ac);color:#fff;font-size:15px;cursor:pointer}
+.row{display:flex;align-items:center;gap:10px;padding:10px 12px;border-bottom:1px solid var(--bd)}
+.row:last-child{border:0}.row.me{background:rgba(47,91,216,.12)}
+.row .n{width:28px;text-align:center;font-weight:600;color:var(--mut)}
+.row .nm{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.row .sc{font-weight:600}
+.mut{color:var(--mut)}
+[hidden]{display:none!important}
+.top{display:flex;justify-content:space-between;align-items:center}
+.ic{border:1px solid var(--bd);background:var(--card);color:var(--fg);border-radius:10px;width:38px;height:38px;cursor:pointer;font-size:17px}
+.hint{margin:0 0 12px;color:var(--mut);font-size:13px}
+.chips button small{opacity:.7;margin-left:4px}
+.opts{display:grid;gap:8px;margin-top:14px}
+.opts button{padding:13px;border-radius:12px;border:1px solid var(--bd);background:var(--card);color:var(--fg);font-size:17px;cursor:pointer;text-align:left}
+.opts .ok{background:var(--ok);border-color:var(--ok);color:#fff}
+.opts .bad{background:#c0392b;border-color:#c0392b;color:#fff}
+.nx{margin-top:12px;width:100%;padding:13px;border-radius:12px;border:0;background:var(--ac);color:#fff;font-size:16px;cursor:pointer}
+.box .sh{background:none;color:var(--ac);padding:6px 0;margin-top:6px}
+details{margin-top:14px;font-size:14px;color:var(--mut)}details .sh{margin-right:14px}
+:focus-visible{outline:2px solid var(--ac);outline-offset:2px}
+@media(prefers-reduced-motion:reduce){*{transition:none!important}}
