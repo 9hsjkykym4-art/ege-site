@@ -1,4 +1,0 @@
-window.CONFIG = {
-  SUPABASE_URL: "https://xtyhakcysvwvbpbbivio.supabase.co",
-  SUPABASE_ANON_KEY: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inh0eWhha2N5c3Z3dmJwYmJpdmlvIiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTE2OTg2NDMsImV4cCI6MjEwNzI3NDY0M30.qIvW8JZeCAMjQJcADF32ucGqQUsaYyeEcXm03JmBQ7Y"
-};
